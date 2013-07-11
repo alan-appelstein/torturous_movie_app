@@ -4,5 +4,7 @@
 </form>
 
 <% @search_results.movies.each do |movie| %>
-  <%= movie.title %>
+  <ul>
+    <a href="/movies/<%= movie.id %>"><li><%= movie.title %></li></a>
+  </ul>
 <% end %>
