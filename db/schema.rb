@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(:version => 20130710193606) do
     t.integer "year"
     t.text    "plot"
     t.string  "mpaa_rating"
-    t.integer "user_rating"
+    t.integer "user_rating", :default => 50
   end
 
 end

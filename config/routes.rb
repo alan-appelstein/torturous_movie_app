@@ -5,6 +5,7 @@ Moviez::Application.routes.draw do
   post '/movies' => 'movie#create'
   get '/movies/new' => 'movie#new'
   get '/movies/:id' => 'movie#movie', as: 'single_movie'
-# post '/movies/search/save' => 'movie#save', as: 'save_movie'
+  post '/movies/:id/save' => 'movie#save', as: 'save_movie'
+  post '/movies/:id/edit' => 'movie#edit', as: 'edit_rating'
 end
 

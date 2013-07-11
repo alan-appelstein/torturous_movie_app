@@ -1,5 +1,9 @@
 <h2>Saved Movies</h2>
 
 <% @movies.each do |movie| %>
-  <%= movie.title %>
+  <%= movie.title %></br>
+  Rating: <%= movie.user_rating %></br>
+  <%= button_to("+", edit_rating_path(movie, user_rating: "+1")) %>
+  <%= button_to("-", edit_rating_path(movie, user_rating: "-1")) %>
+  <%= button_to("<3", edit_rating_path(movie, user_rating: "favorite")) %>
 <% end %>
