@@ -4,6 +4,13 @@
 <%= @movie.year %></br>
 <%= @movie.plot %></br>
 <%= @movie.mpaa_rating %>
+<h2>Cast:</h2>
+<% @movie.cast_members.each do |actor| %>
+  <ul>
+    <li><%= actor %></li>
+  </ul>
+<% end %>
+</ul>
 
 
 

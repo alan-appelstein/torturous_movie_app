@@ -23,7 +23,7 @@ class MovieController < ApplicationController
         movie.save
     end
 
-    render "movies"
+    redirect_to :movies_list
   end
 
   def search
